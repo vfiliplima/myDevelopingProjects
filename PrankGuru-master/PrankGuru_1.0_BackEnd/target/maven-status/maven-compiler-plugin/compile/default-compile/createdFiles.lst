@@ -1,0 +1,6 @@
+org\academiadecodigo\offstring\prankguru\models\Prank.class
+org\academiadecodigo\offstring\prankguru\models\Review.class
+org\academiadecodigo\offstring\prankguru\controllers\RestPrankController.class
+org\academiadecodigo\offstring\prankguru\models\ReviewDto.class
+org\academiadecodigo\offstring\prankguru\services\PrankManager.class
+org\academiadecodigo\offstring\prankguru\models\PrankDto.class

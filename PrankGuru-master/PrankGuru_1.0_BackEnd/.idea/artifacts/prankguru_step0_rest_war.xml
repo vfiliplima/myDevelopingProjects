@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="prankguru-step0-rest:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>prankguru-step0-rest</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="PrankGuru.war">
+      <element id="artifact" artifact-name="prankguru-step0-rest:war exploded" />
+    </root>
+  </artifact>
+</component>

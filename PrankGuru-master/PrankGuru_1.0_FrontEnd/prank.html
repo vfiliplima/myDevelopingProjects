@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<title>Prank</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="js/prank.js"></script>
+
+</head>
+
+<body class="w3-white">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-light-grey">
+  <!-- Avatar image in top left corner -->
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+ <a href="#video" class="w3-bar-item w3-button w3-padding-large ">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>VIDEO</p>
+  </a>
+  <a href="store.html" class="w3-bar-item w3-button w3-padding-large ">
+    <i class="fa fa-shopping-cart w3-xxlarge"></i>
+    <p>STORE</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#video" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="store.html" class="w3-bar-item w3-button" style="width:25% !important">STORE</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center" id="video">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Pranks Guru</span></h1>
+    <div id="youtube-div"></div>
+    <!--<iframe width="100%" height="650" src="https://www.youtube.com/embed/tKqJ9J1THaU"></iframe>-->
+  </header>
+
+  <!-- Description -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-black">Description</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div id="description-div"></div>
+  </div>
+  
+   <!-- Description -->
+   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="">
+    <h2 class="w3-text-black">Reviews</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+   <div id="div-review"></div>
+
+
+  </div>
+  
+
+  <!-- Comment your experience -->
+  <div class="w3-padding-64 w3-content w3-text-black" id="contact">
+    <h2 class="w3-text-black">Comment your experience</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+
+    <p>Send review here:</p>
+
+    <form>
+      <p><input id="in-username" class="form-control" type="text" placeholder="Username" required name="Username"></p>
+      <p><input id="in-title" class="form-control" type="text" placeholder="Title" required name="Title"></p>
+      <p><input id="in-content" class="form-control" type="text" placeholder="Content" required name="Content"></p>
+    
+        <p> <form class="ropdown show form-control">
+        <select id="in-stars" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <option value="3">Stars</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        </form></p>
+    </form>
+    <button id="submit-review" class="" type="submit">
+       SEND REVIEW
+        </button>
+  <!-- End Contact Section --> 
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  
+    <p class="w3-medium" align="center">Powered by Prank Gurus</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
